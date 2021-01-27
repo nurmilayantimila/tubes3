@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".settingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_set2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp"
+        android:backgroundTint="#F4EFEF"
+        android:layout_below="@+id/cv_set"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Info"
+                android:textStyle="bold"
+                android:layout_margin="20sp"/>
+
+            <ImageView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textset"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_homee"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textset"
+                android:layout_marginLeft="60dp"
+                android:text="AppName =>> restoranQ"/>
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/appname"
+                  android:src="@drawable/ic_call"/>
+
+           <Button
+               android:id="@+id/btn_call"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Call center"
+               android:layout_below="@+id/appname"
+               android:layout_marginLeft="60dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

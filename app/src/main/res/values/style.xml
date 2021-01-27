@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+
+        <item name="background_color">#F8F8FA</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+
+
+    </style>
+    <style name="Darktheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="background_color">#8493CA</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        
+    </style>
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>
